@@ -9,6 +9,8 @@
       href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   </head>
   <body>
     <nav>
@@ -41,7 +43,7 @@
         </div>
         <div class="header_right">
           <div class="header_right_image">
-            <img src="./images/header.svg" alt="Header Image" />
+            <img src="./images/avatar.jpg" alt="Header Image" />
           </div>
         </div>
       </div>
@@ -213,89 +215,28 @@
             </p>
           </div>
         </article>
-        <article class="faq">
-          <div class="faq_icon">
-            <img src="./asset/close.svg" alt="/" height="10" width="10" />
-          </div>
-          <div class="question_answer">
-            <h4>how do i know the right course for me?</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              sapiente maxime ut exercitationem in itaque, quaerat molestias
-              necessitatibus consequuntur blanditiis distinctio error, minima
-              magni, harum numquam suscipit commodi impedit eveniet.
-            </p>
-          </div>
-        </article>
-        <article class="faq">
-          <div class="faq_icon">
-            <img src="./asset/close.svg" alt="/" height="10" width="10" />
-          </div>
-          <div class="question_answer">
-            <h4>how do i know the right course for me?</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              sapiente maxime ut exercitationem in itaque, quaerat molestias
-              necessitatibus consequuntur blanditiis distinctio error, minima
-              magni, harum numquam suscipit commodi impedit eveniet.
-            </p>
-          </div>
-        </article>
-        <article class="faq">
-          <div class="faq_icon">
-            <img src="./asset/close.svg" alt="/" height="10" width="10" />
-          </div>
-          <div class="question_answer">
-            <h4>how do i know the right course for me?</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              sapiente maxime ut exercitationem in itaque, quaerat molestias
-              necessitatibus consequuntur blanditiis distinctio error, minima
-              magni, harum numquam suscipit commodi impedit eveniet.
-            </p>
-          </div>
-        </article>
-        <article class="faq">
-          <div class="faq_icon">
-            <img src="./asset/close.svg" alt="/" height="10" width="10" />
-          </div>
-          <div class="question_answer">
-            <h4>how do i know the right course for me?</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              sapiente maxime ut exercitationem in itaque, quaerat molestias
-              necessitatibus consequuntur blanditiis distinctio error, minima
-              magni, harum numquam suscipit commodi impedit eveniet.
-            </p>
-          </div>
-        </article>
+
+        
       </div>
     </section>
     <!-- END OF QAF -->
 
-    <section class="container testimonials_container">
-      <h2>students' testimonial</h2>
-      <div>
-        <articale class="testimoial">
-          <div class="avatar">
-            <img src="./images/avatar.jpg" alt="/" />
-          </div>
-          <div class="testimoial_info">
-            <h5>Diana Ayi</h5>
-            <small>student</small>
-          </div>
-          <div class="testimonial_body">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A optio
-              vero consequatur fugit excepturi est corporis eos voluptas, vel
-              blanditiis necessitatibus inventore eligendi iste error facilis
-              hic! Qui, iure est!
-            </p>
-          </div>
-        </articale>
+    <section class="image-slider">
+      <h2>Image Slider</h2>
+      <div class="slider-container">
+        <div class="slides">
+          <img src="./images/avatar.jpg" alt="Image 1" />
+          <img src="./images/avatar2.jpg" alt="Image 1" />
+          <img src="./images/avatar7.jpg" alt="Image 1" />
+          <img src="./images/avatar.jpg" alt="Image 1" />
+          <img src="./images/avatar3.jpg" alt="Image 1" />
+          <!-- Add more images as needed -->
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
       </div>
-    </section>
-
+    </section>    
+    
     <footer>
       <div class="container footer_container">
         <div class="footer_1">
@@ -303,8 +244,7 @@
             <h4>MINTE</h4>
           </a>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab minus
-            quisquam nobis sunt voluptatem tempora harum numquam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab minus quisquam nobis sunt voluptatem tempora harum numquam.
           </p>
         </div>
         <div class="footer_2">
@@ -312,36 +252,37 @@
           <ul class="permalinks">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="course.html">courses</a></li>
-            <li><a href="contact.html">contact</a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="footer_3">
-          <h4>Privecy</h4>
+          <h4>Privacy</h4>
           <ul class="privacy">
-            <li><a href="#">Privcy Policy</a></li>
-            <li><a href="#">Terms and conditions</a></li>
-            <li><a href="#">Refund policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Refund Policy</a></li>
           </ul>
         </div>
         <div class="footer_4">
           <h4>Contact Us</h4>
           <div>
             <p>+251 91712 3631</p>
-            <p>mintesinottamene0917@gmail.com</p>
+            <p><a href="mailto:mintesinottamene0917@gmail.com">mintesinottamene0917@gmail.com</a></p>
           </div>
-          <ul class="footer_socials">
-            <li><a href="#">icon</a></li>
-            <li><a href="#">icon</a></li>
-            <li><a href="#">icon</a></li>
-            <li><a href="#">icon</a></li>
-          </ul>
+          <div class="footer_socials">
+            <a href="#" aria-label="Facebook" class="social_icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter" class="social_icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram" class="social_icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn" class="social_icon"><i class="fab fa-linkedin-in"></i></a>
+          </div>
         </div>
       </div>
       <div class="footer_copyright">
-        <small>Copyright &COPY; Github</small>
+        <small>&copy; 2024 MINTE. All rights reserved.</small>
       </div>
     </footer>
+    
 
     <script src="./main.js"></script>
   </body>
