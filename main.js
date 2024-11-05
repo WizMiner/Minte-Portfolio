@@ -83,3 +83,21 @@ setInterval(() => {
 
 // Initial call to display the first slide
 showSlides(currentSlideIndex);
+
+function toggleSkills(category) {
+  const skillsList = category.querySelector(".skills-list");
+  const icon = category.querySelector(".icon");
+  if (skillsList.style.display === "none") {
+    skillsList.style.display = "flex";
+    icon.innerHTML = "&#9660;"; // Down arrow
+  } else {
+    skillsList.style.display = "none";
+    icon.innerHTML = "&#9654;"; // Right arrow
+  }
+}
+
+// Initially show all skill categories
+function toggleSkills(element) {
+  const skillsList = element.querySelector('.skills-list');
+  skillsList.style.display = skillsList.style.display === 'block' ? 'none' : 'block';
+}

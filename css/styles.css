@@ -129,8 +129,8 @@ nav {
   height: 100%;
 }
 
-.tracking-in-contract {
-	animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) NaNs infinite alternate ;
+.tracking-in-contract-bck {
+  animation: tracking-in-contract-bck 2s 1s infinite both;
   color: var(--color-white);
 }
 
@@ -153,10 +153,9 @@ nav {
     opacity: 1;
   }
 }
-
 .nav_menu {
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .nav_menu a {
@@ -171,6 +170,7 @@ nav {
 }
 
 nav button {
+  right: 0;
   background: none;
   border: none;
   cursor: pointer;
@@ -182,14 +182,14 @@ nav button {
   .nav_menu {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     height: 100vh;
     width: 100%;
     background-color: var(--color-primary);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 4rem;
     transition: transform 0.3s ease;
     transform: translateX(100%);
   }
@@ -266,55 +266,116 @@ header {
 }
 
 /* Categories section styling */
-.categories {
-  padding: 3rem 0;
-  background-color: #fafafa;
+/* Base Styling */
+/* .categories {
+  padding: 3rem 1rem;
+  background-color: #f5f7fa;
 }
 
-.categories_container {
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   gap: 2rem;
 }
 
+/* Left Section Styling */
 .categories_left {
   flex: 1;
   max-width: 600px;
 }
 
-.categories_left h2 {
-  font-size: 2rem;
+.skills-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.skills-container h2 {
+  font-size: 1.8rem;
+  color: #333;
   margin-bottom: 1rem;
-  color: #555;
 }
 
-.categories_left p {
-  font-size: 1.1rem;
-  color: #555;
+.skills-container p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
 }
 
+.skill-category {
+  background-color: #e0f7fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.skill-category h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #007acc;
+}
+
+.skill-category:hover {
+  background-color: #d0eff2;
+}
+
+.icon {
+  font-size: 1rem;
+  color: #007acc;
+  transition: transform 0.3s ease;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  background-color: #007acc;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.skill-item i {
+  font-size: 1rem;
+}
+
+/* Right Section Styling */
 .categories_right {
+  flex: 1;
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: center;
-  flex: 1;
 }
 
 .category {
   flex: 1 1 30%;
-  max-width: 30%;
   padding: 1.5rem;
-  background-color: var(--color-primary);
+  background-color: #007acc;
+  color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .category:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
 }
 
 .category_icon {
@@ -322,47 +383,37 @@ header {
   margin-bottom: 0.5rem;
 }
 
-/* Responsive adjustments */
-@media (max-width: 992px) {
-  .header_container,
-  .categories_container {
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
     flex-direction: column;
     align-items: center;
-    text-align: center;
-  }
-
-  .header_left,
-  .header_right,
-  .categories_left,
-  .categories_right {
-    max-width: 100%;
-    flex: 1 1 100%;
   }
 
   .categories_right {
     flex-direction: row;
+    gap: 1rem;
   }
 
   .category {
     flex: 1 1 45%;
-    max-width: 45%;
   }
 }
 
 @media (max-width: 576px) {
-  .header_left h1 {
-    font-size: 2rem;
-  }
-
-  .categories_left h1 {
-    font-size: 1.8rem;
+  .categories_left,
+  .categories_right {
+    width: 100%;
   }
 
   .category {
     flex: 1 1 100%;
-    max-width: 100%;
   }
-}
+
+  .skills-list {
+    gap: 0.5rem;
+  }
+} */
 
 /* POPULAR COURSES */
 /* Courses Section Styling */

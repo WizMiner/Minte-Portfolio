@@ -1,0 +1,144 @@
+/* skill */
+.skills-wrapper {
+  width: 100%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+}
+
+h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.skills-wrapper p {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skills-section {
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-bottom: 2px solid #007acc;
+  cursor: pointer;
+}
+
+.skills-section h3 {
+  font-size: 22px;
+  color: #007acc;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.skills-section i.fa-chevron-down {
+  margin-left: auto;
+  transition: transform 0.3s;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  display: none;
+}
+
+.skill {
+  width: 150px;
+  padding: 10px;
+  background-color: #007acc;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.skill i {
+  font-size: 18px;
+}
+
+.skill:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+}
+
+.skill.active {
+  background-color: #005fa3;
+}
+
+/* skill ve */
+.skills-showcase {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.skills-showcase h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; /* Space between cards */
+}
+
+.skill-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 250px; /* Fixed width for cards */
+  transition: transform 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.skill-header i {
+  font-size: 30px;
+  color: #007acc; /* Icon color */
+  margin-right: 1rem;
+}
+
+.skill-progress {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 10px; /* Height of the progress bar */
+  background-color: #007acc;
+  transition: width 0.4s ease;
+}
+
+@media (max-width: 768px) {
+  .skill-card {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 300px; /* Max width for large mobile screens */
+  }
+
+  .skills-showcase h2 {
+    font-size: 2rem; /* Smaller title on mobile */
+  }
+}
